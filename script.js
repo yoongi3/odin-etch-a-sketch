@@ -7,15 +7,20 @@ function createGrid(gridSize){
     for(i=0; i<gridSize; i++){
         let newRow = document.createElement("div");
         container.appendChild(newRow).className = "row";
-        console.log("row"+(i+1))
-
         // Create Columns
         for(j=0; j<gridSize; j++){
             let newCell = document.createElement("div");
-            rows[i].appendChild(newCell).className = "cell";
-            console.log("column"+(j+1))
+            rows[i].appendChild(newCell).className = "cells";
         }
     }
+
+    var gridCells = document.querySelectorAll('.cells'); 
+    gridCells.forEach(cells => cells.addEventListener('click', changeColor));
+}
+
+function changeColor(){
+    this.style.backgroundColor = '#ff9999';
+    console.log("change");
 }
 
 createGrid(16);
