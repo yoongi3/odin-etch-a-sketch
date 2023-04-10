@@ -1,9 +1,10 @@
+#grid_container{
+}
 .row{
     display: flex;
 }
 .cells{
     border: 1px;
     border-style: solid;
-    min-height: 20px;
-    min-width: 20px;
+    box-sizing: border-box;
 }
