@@ -1,4 +1,34 @@
-#grid_container{
+.header{
+    background-color: blueviolet;
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+}
+.main{
+    display: flex;
+    flex-direction:column ;
+    background-color: red;
+    padding-top: 50px;
+}
+.footer{
+    background-color: blueviolet;
+    text-align: center;
+}
+.settings{
+    display: flex;
+    margin: 10px;
+    justify-content:center;
+}
+.grid-container{
+    align-self: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px;
+    border-style: solid;
+    width: 512px;
+    height: 512px;
+    background-color:white;
 }
 .row{
     display: flex;
@@ -7,4 +37,8 @@
     border: 1px;
     border-style: solid;
     box-sizing: border-box;
+}
+button{
+    background-color: blueviolet;
+    margin: 5px;
 }
